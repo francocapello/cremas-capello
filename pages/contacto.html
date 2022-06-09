@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--enlace de tipografia-->
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? family= Exo+2:ital,wght@1,300;1,400;1,500 & display=swap" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Contacto-BeautyCream</title>
+</head>
+<body class="fondo">
+    
+    <header class="encabezado">
+        <nav>
+            <a href="../index.html">
+                <img src="../img/figuralogo.svg" alt="logo" class="logo">
+                <img src="../img/logo.svg" alt="beautycream" class="logo">
+            </a>
+            <ul>
+                <li class="lista"><a href="producto.html" class="hipervinculo">Productos</a></li>
+                <li class="lista"><a href="nosotros.html" class="hipervinculo">Nosotros</a></li>
+                <li class="lista"><a href="locales.html" class="hipervinculo">Locales</a></li>
+                <li class="lista"><a href="contacto.html" class="hipervinculo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <p class="textoFormulario">Hola! ☺ No dudes en escribirnos, estamos para ayudarte!
+
+            Nuestro Horarios de Atención y Entrega en nuestras oficinas son: lunes a viernes de 9 a 15 hs y de 17 a 19 hs (no se entregara fuera de ese horario ni dias feriados, mil disculpas)
+            </p>
+        </div>
+            <!--mejorar el formulario-->
+        <form action="">
+            <fieldset>
+                <legend>Formulario</legend>
+                <div>
+                    <label for="nombre">
+                        Completa tu nombre
+                    </label>
+                    <input type="text" name="nombre" placeholder="tu nombre">
+                </div>
+                <div>
+                    <label for="apellido">
+                        Completa tu apellido
+                    </label>
+                    <input type="text" name="apellido" placeholder="tu apellido">
+                </div>
+                <div>
+                    <label for="pais">
+                        Selecciona tu pais
+                    </label>
+                    <select name="pais" id="" class="opciones">
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="colombia">Colombia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="consulta">
+                        Mensaje
+                    </label>
+                    <input type="text" name="consulta" placeholder="mensaje">
+                </div>
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="redes"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li class="redes"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        </ul>
+        <p>Visita nuestras redes sociales</p>
+    </footer>
+
+
+</body>
+</html>

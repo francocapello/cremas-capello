@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo{
+    background-color: #F9D8C4;
+}
+
+/*estilos index*/
+
+/*header*/
+
+.encabezado{
+    background-color: #F9B288;
+    height: 6.5rem;
+}
+
+.logo{
+    margin-top: 1.8rem;
+    margin-left: 1rem;
+    height: 0.9rem;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista{
+    list-style: none;
+    font-size: 0.8rem;
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.2rem;
+}
+
+.hipervinculo{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*main*/
+
+.imagenFondo{
+    background-image: url(../img/brittney-weng-CSquI0aw_Rg-unsplash.jpg);
+    background-size: cover;
+    height: 850px;
+    background-position: center left;
+}
+
+
+main h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+
+.slogan{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*footer*/
+
+footer{
+    background-color: #F9B288;
+    height: 6.5rem;
+}
+
+footer ul{
+    text-align: center;
+}
+.redes{
+    font-size: 1.3rem;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 1.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    margin: 1.2rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+
+
+/*html productos*/
+
+/*main*/
+
+main ul li img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+main ul li{
+    list-style: none;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-areas: "uno dos"
+                         "tres cuatro"
+                         "cinco seis"
+                         "siete ocho";
+
+    gap: 2rem;
+    margin: 2rem;
+    justify-content: center;
+    justify-items: center;                     
+}
+
+.uno{
+    grid-area: uno;
+}
+
+.dos{
+    grid-area: dos;
+}
+
+.tres{
+    grid-area: tres;
+}
+
+.cuatro{
+    grid-area: cuatro;
+}
+
+.cinco{
+    grid-area: cinco;
+}
+
+.seis{
+    grid-area: seis;
+}
+
+.siete{
+    grid-area: siete;
+}
+
+.ocho{
+    grid-area: ocho;
+}
+
+.nueve{
+    display: none;
+}
+    
+
+/*html nosotros*/
+
+/*main*/
+
+.textoUno{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    margin: 4rem 1rem;
+    text-align: center;
+}
+
+.textoDos{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    margin: 4rem 1rem;
+    text-align: center;
+}
+
+.textoTres{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    margin: 4rem 1rem;
+    text-align: center;
+}
+
+.textoCuatro{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    margin: 4rem 1rem;
+    text-align: center;
+}
+
+/*html locales*/
+
+.mapaLocal{
+    width: 350px;
+    height: 350px;
+    margin: 2rem;
+    border-radius: 10%;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+/*html contacto*/
+
+.textoFormulario{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+form fieldset{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form fieldset legend{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+form{
+    font-size: 1rem;
+}
+
+form fieldset div label{
+    font-size: 1rem;
+}
+
+form fieldset div input{
+    font-size: 1rem;
+}
+
+/*media queries*/
+
+@media screen and (min-width:600px){
+    
+    .logo{
+        height: 1rem;
+        margin-top: 1.6rem;
+    }
+
+    .lista{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+
+    .encabezado{
+        height: 8rem;
+    }
+
+    .logo{
+        height: 2.4rem;
+    }
+
+    .lista{
+        font-size: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    header nav ul li:hover{
+        background-color: chocolate;
+    }
+
+    main h1{
+        font-size: 4rem;
+    }
+
+    .slogan{
+        font-size: 2.2rem;
+    }    
+
+    footer{
+        height: 7.5rem;
+    }
+
+    .redes{
+        font-size: 2.3rem;
+    }
+
+    footer p{
+        font-size: 1.8rem;
+    }
+
+
+    /*main de producto*/
+
+    main ul li img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .cuerpo{
+        grid-template-areas: "uno dos tres"
+                             "cuatro cinco seis"
+                             "siete ocho nueve";
+        
+        gap: 3.5rem;                  
+                        
+    }
+
+    .nueve{
+        display: block;
+    }
+
+    .cremasDescripcion:hover{
+        transform: scale(1.1);
+    }
+
+
+    /*main de nosotros*/
+
+    .textoUno{
+        font-size: 3rem;
+        margin: 3rem 1rem;
+    }
+
+    .textoDos{
+        font-size: 2.6rem;
+        margin: 3rem 1rem;
+    }
+
+    .textoTres{
+        font-size: 2.6rem;
+        margin: 3rem 1rem;
+    }
+
+    .textoCuatro{
+        font-size: 2.6rem;
+        margin: 3rem 1rem;
+    }
+
+    /*main de locales*/
+
+    .mapaLocal{
+        width: 700px;
+        height: 700px;
+        margin: 2rem;
+    }
+
+    main p{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+}
