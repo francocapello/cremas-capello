@@ -6,7 +6,9 @@
 
 .fondo{
     background-color: #F9D8C4;
+    
 }
+
 
 /*estilos index*/
 
@@ -75,7 +77,8 @@ main h1{
 
 footer{
     background-color: #F9B288;
-    height: 6.5rem;
+    height: 7.5rem;
+
 }
 
 footer ul{
@@ -222,36 +225,24 @@ main p{
 
 /*html contacto*/
 
+
 .textoFormulario{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-    margin: 2rem;
+    font-size: 1rem;
 }
 
-form fieldset{
+
+
+.seccionFormulario{
     display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5rem;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    padding: 3rem;
 }
 
-form fieldset legend{
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-form{
-    font-size: 1rem;
-}
-
-form fieldset div label{
-    font-size: 1rem;
-}
-
-form fieldset div input{
-    font-size: 1rem;
+.boton{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
 }
 
 /*media queries*/
@@ -267,6 +258,8 @@ form fieldset div input{
         font-size: 1rem;
         margin-top: 1rem;
     }
+
+    
 
 }
 
@@ -371,6 +364,13 @@ form fieldset div input{
     main p{
         font-size: 2rem;
         margin: 1rem;
+    }
+
+    /*main contactos*/
+
+    .textoFormulario{
+        font-size: 2.2rem;
+        margin: 1.5rem;
     }
 
 }
