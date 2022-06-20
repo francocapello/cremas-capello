@@ -16,7 +16,7 @@
 
 .encabezado{
     background-color: #F9B288;
-    height: 10rem;
+    
 }
 
 .logo{
@@ -33,7 +33,7 @@ header nav a{
 
 .navbar-nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -179,29 +179,40 @@ main ul li{
 
 .textoUno{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    margin: 4rem 1rem;
+    font-size: 1.2rem;
+    margin: 4rem 2rem;
     text-align: center;
 }
 
 .textoDos{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    margin: 4rem 1rem;
+    font-size: 1.2rem;
+    margin: 4rem 2.5rem;
     text-align: center;
+}
+
+main section div{
+    display: flex;
+
+}
+
+main section div img{
+    height: 50%;
+    width: 50%;
+    box-shadow: 2px 1px #e79766;
 }
 
 .textoTres{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    margin: 4rem 1rem;
+    font-size: 1.2rem;
+    margin: 4rem 2.5rem;
     text-align: center;
 }
 
 .textoCuatro{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    margin: 4rem 1rem;
+    font-size: 1.2rem;
+    margin: 4rem 2rem;
     text-align: center;
 }
 
@@ -341,14 +352,16 @@ main p{
     /*main de nosotros*/
 
     .textoUno{
-        font-size: 3rem;
-        margin: 3rem 1rem;
+        font-size: 2.6rem;
+        margin: 3rem 2rem;
     }
 
     .textoDos{
         font-size: 2.6rem;
-        margin: 3rem 1.5rem;
+        margin: 3rem 2.5rem;
     }
+
+    main 
 
     .textoTres{
         font-size: 2.6rem;
@@ -357,7 +370,7 @@ main p{
 
     .textoCuatro{
         font-size: 2.6rem;
-        margin: 3rem 1.5rem;
+        margin: 3rem 2rem;
     }
 
     /*main de locales*/
