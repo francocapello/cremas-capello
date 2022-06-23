@@ -9,6 +9,7 @@
             }
             div{
                 .desordenada{
+                    flex-direction: row;
                     nav-link{
                         font-size: 1rem;
                         margin-top: 1rem;
@@ -40,7 +41,7 @@
             div{
                 div{
                     .desordenada{
-                        display: flex;
+                        flex-direction: row;
                         justify-content: center;
                         .nav-item{
                             font-size: 1.8rem;
