@@ -1,43 +1,8 @@
-@media screen and (min-width: 600px) {
-  header nav a .logo {
-    height: 1rem;
-    margin-top: 1.6rem; }
-  header nav div .desordenada {
-    flex-direction: row; }
-    header nav div .desordenada nav-link {
-      font-size: 1rem;
-      margin-top: 1rem; }
-  main h1 {
-    font-size: 4rem; } }
-
-@media screen and (min-width: 1200px) {
-  /*header*/
-  .encabezado {
-    height: 8rem; }
-    .encabezado nav a .logo {
-      height: 2rem; }
-    .encabezado nav div div .desordenada {
-      flex-direction: row;
-      justify-content: center; }
-      .encabezado nav div div .desordenada .nav-item {
-        font-size: 1.8rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        justify-content: space-evenly; }
-      .encabezado nav div div .desordenada .nav-item:hover {
-        text-decoration: underline; }
-  /*footer*/
-  footer {
-    height: 9rem; }
-    footer ul .redes {
-      font-size: 2.3rem; }
-    footer p {
-      font-size: 1.8rem; }
-  /*index main*/
-  main h1 {
-    font-size: 4rem; }
-  main .slogan {
-    font-size: 2.2rem; } }
+main section .textoUno, main section .textoTres {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.6rem;
+  margin: 3rem 2rem;
+  text-align: center; }
 
 * {
   margin: 0;
@@ -49,29 +14,46 @@
   background-color: #F9B288; }
   .encabezado nav {
     display: flex;
-    flex-direction: column;
     align-items: center; }
     .encabezado nav a {
-      align-items: center; }
-      .encabezado nav a .logo {
-        margin-top: 1.8rem;
-        margin-left: 1rem;
-        height: 1.5rem; }
-    .encabezado nav div div .desordenada {
+      text-decoration: none; }
+      .encabezado nav a img {
+        margin: 1rem;
+        height: 2.2rem; }
+    .encabezado nav div {
       display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .encabezado nav div div .desordenada .nav-item {
-        list-style: none;
-        font-size: 1.2rem;
-        display: inline-block;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-top: 0.2rem; }
-        .encabezado nav div div .desordenada .nav-item .nav-link {
-          text-decoration: none;
-          color: black;
-          font-family: 'Times New Roman', Times, serif; }
+      justify-content: flex-end; }
+      .encabezado nav div div {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem; }
+        .encabezado nav div div .ul .nav-item {
+          list-style: none; }
+          .encabezado nav div div .ul .nav-item .nav-link {
+            text-decoration: none;
+            color: black;
+            font-family: 'Times New Roman', Times, serif; }
+
+/*footer*/
+footer {
+  background-color: #F9B288;
+  height: 8.5rem; }
+  footer .listaFinal {
+    text-align: center; }
+    footer .listaFinal .redes {
+      font-size: 2rem;
+      display: inline-block;
+      font-family: 'Times New Roman', Times, serif;
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      footer .listaFinal .redes a {
+        text-decoration: none;
+        color: black; }
+  footer p {
+    margin: 1.2rem;
+    color: black;
+    font-size: 2rem; }
 
 /*index.html main*/
 .imagenFondo {
@@ -82,30 +64,120 @@
   .imagenFondo h1 {
     text-decoration: underline;
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 3.5rem;
     font-family: 'Times New Roman', Times, serif; }
   .imagenFondo .slogan {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center; }
 
-/*footer*/
-footer {
-  background-color: #F9B288;
-  height: 7.5rem; }
-  footer .listaFinal {
-    text-align: center; }
-    footer .listaFinal .redes {
-      font-size: 1.3rem;
-      display: inline-block;
-      font-family: 'Times New Roman', Times, serif;
-      padding-top: 1.4rem;
-      padding-left: 2rem;
-      padding-right: 2rem; }
-      footer .listaFinal .redes a {
-        text-decoration: none;
-        color: black; }
-  footer p {
-    margin: 1.2rem;
-    color: black;
-    font-size: 1.3rem; }
+/*fondo general*/
+.fondo {
+  background-color: #F9D8C4; }
+
+/*main de productos*/
+main h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Times New Roman', Times, serif; }
+
+main .cuerpo {
+  display: grid;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve";
+  gap: 3.5rem;
+  margin: 2rem;
+  justify-content: center;
+  justify-items: center; }
+  main .cuerpo .uno {
+    grid-area: uno; }
+  main .cuerpo .dos {
+    grid-area: dos; }
+  main .cuerpo .tres {
+    grid-area: tres; }
+  main .cuerpo .cuatro {
+    grid-area: cuatro; }
+  main .cuerpo .cinco {
+    grid-area: cinco; }
+  main .cuerpo .seis {
+    grid-area: seis; }
+  main .cuerpo .siete {
+    grid-area: siete; }
+  main .cuerpo .ocho {
+    grid-area: ocho; }
+  main .cuerpo .nueve {
+    grid-area: nueve; }
+  main .cuerpo .cremasDescripcion:hover {
+    transform: scale(1.1); }
+  main .cuerpo li {
+    list-style: none; }
+    main .cuerpo li img {
+      height: 250px;
+      width: 250px;
+      border-radius: 2rem; }
+
+/*main de nosotros*/
+main h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Times New Roman', Times, serif; }
+
+main section .textoDos {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.6rem;
+  margin: 5rem 6rem;
+  text-align: center; }
+
+main section div {
+  display: flex;
+  justify-content: center; }
+  main section div img {
+    width: 700px;
+    height: 630px;
+    border-radius: 2rem; }
+
+main section .textoCuatro {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.6rem;
+  margin: 5rem 6rem;
+  text-align: center; }
+
+/*main de locales*/
+main h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Times New Roman', Times, serif; }
+
+main div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main div .mapaLocal {
+    width: 700px;
+    height: 700px;
+    margin: 2rem;
+    border-radius: 10%; }
+
+main p {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem; }
+
+/*main de contactos*/
+main div .textoFormulario {
+  font-size: 2.2rem;
+  margin: 1.5rem; }
+
+main .seccionFormulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-bottom: 6rem; }
+  main .seccionFormulario div div h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif; }
