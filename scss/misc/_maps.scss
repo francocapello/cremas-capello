@@ -1,0 +1,7 @@
+//colores de la redes
+
+$redes: (
+    redes: rgb(190, 11, 41),
+);
+
+$red: map-get($redes, redes);

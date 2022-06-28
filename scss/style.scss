@@ -4,6 +4,8 @@
 
 @import "misc/mixin";
 @import "misc/extend";
+@import "misc/medias-q";
+@import "misc/maps";
 
 
 
@@ -41,6 +43,9 @@ $color-secundario:#F9B288;
                 margin-left: 3rem;
                 margin-right: 3rem;
                 .ul{
+                    .nav-item:hover{
+                        text-decoration: underline;
+                    }
                     .nav-item{
                         list-style: none;
                         .nav-link{
@@ -71,7 +76,7 @@ footer{
             padding-right: 1.5rem;
             a{
                 text-decoration: none;
-                color: black;
+                color: $red;
             }
         }
     }
@@ -258,3 +263,217 @@ main{
         }
     }
 }
+
+
+@media screen and (max-width: 800px){
+    .encabezado{
+        nav{
+            justify-content: center;
+            align-items: flex-start;
+            div{
+                justify-content: flex-start;
+                div{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        .listaFinal{
+            .redes{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /*html de productos*/
+
+    main{
+        .cuerpo{
+            grid-template-areas:"uno dos"
+                                "tres cuatro"
+                                "cinco seis"
+                                "siete ocho";
+
+            .nueve{
+            display: none;
+            }
+            
+
+            li{
+                img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    /*main de nosotros*/
+
+    main{
+        section{
+            .textoUno{
+                font-size: 2rem;
+            }
+            .textoDos{
+                font-size: 2rem;
+            }
+            div{
+                img{
+                    width: 600px;
+                    height: 530px;
+                }
+            }
+            .textoTres{
+                font-size: 2rem;
+            }
+            .textoCuatro{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    /*main de contacto*/
+
+    main{
+        div{
+           .textoFormulario{
+            font-size: 1.8rem;
+
+           } 
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 500px){
+    .encabezado{
+        nav{
+            a{
+                img{
+                    height: 1.7rem;
+                }
+            }
+            div{
+                div{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    /*titulos generales*/
+
+    main{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+    /*main del index*/
+
+    .imagenFondo{
+        h1{
+            font-size: 2.5rem;
+        }
+        .slogan{
+            font-size: 1.5rem;
+        }
+    }
+
+    /*main de productos*/
+
+    main{
+        .cuerpo{
+            grid-template-areas:"uno"
+                                "dos"
+                                "tres"
+                                "cuatro"
+                                "cinco"
+                                "seis"
+                                "siete"
+                                "ocho"
+                                "nueve";
+            .nueve{
+            display: block;
+            }
+            
+
+            li{
+                img{
+                    height: 230px;
+                    width: 230px;
+                }
+            }
+        }
+    }
+
+    /*main de nosotros*/
+
+    main{
+        section{
+            .textoUno{
+                font-size: 1.5rem;
+            }
+            .textoDos{
+                font-size: 1.5rem;
+            }
+            div{
+                img{
+                    width: 400px;
+                    height: 330px;
+                }
+            }
+            .textoTres{
+                font-size: 1.5rem;
+            }
+            .textoCuatro{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /*main de locales*/
+
+    main{
+        div{
+            .mapaLocal{
+                width: 600px;
+                height: 600px;
+            }
+        }
+        p{
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    /*main de contactos*/
+
+    main{
+        div{
+            .textoFormulario{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+
+
+
+
+}
+

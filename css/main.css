@@ -4,6 +4,25 @@ main section .textoUno, main section .textoTres {
   margin: 3rem 2rem;
   text-align: center; }
 
+@media screen and (max-width: 800px) {
+  .encabezado nav {
+    justify-content: center;
+    align-items: flex-start; }
+    .encabezado nav div {
+      justify-content: flex-start; }
+      .encabezado nav div div {
+        font-size: 1rem; }
+  footer .listaFinal .redes {
+    font-size: 1.2rem; }
+  footer .listaFinal p {
+    font-size: 1.2rem; }
+  /*html de productos*/
+  main .cuerpo {
+    grid-template-areas: "uno" "dos" "tres" "cuatros" "cinco" "seis" "siete" "ocho" "nueve"; }
+    main .cuerpo li img {
+      height: 100px;
+      width: 150px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +46,8 @@ main section .textoUno, main section .textoTres {
         font-size: 1.5rem;
         margin-left: 3rem;
         margin-right: 3rem; }
+        .encabezado nav div div .ul .nav-item:hover {
+          text-decoration: underline; }
         .encabezado nav div div .ul .nav-item {
           list-style: none; }
           .encabezado nav div div .ul .nav-item .nav-link {
@@ -49,7 +70,7 @@ footer {
       padding-right: 1.5rem; }
       footer .listaFinal .redes a {
         text-decoration: none;
-        color: black; }
+        color: #be0b29; }
   footer p {
     margin: 1.2rem;
     color: black;
@@ -181,3 +202,86 @@ main .seccionFormulario {
     text-align: center;
     font-size: 3.5rem;
     font-family: 'Times New Roman', Times, serif; }
+
+@media screen and (max-width: 800px) {
+  .encabezado nav {
+    justify-content: center;
+    align-items: flex-start; }
+    .encabezado nav div {
+      justify-content: flex-start; }
+      .encabezado nav div div {
+        font-size: 1.5rem; }
+  footer .listaFinal .redes {
+    font-size: 1.5rem; }
+  footer .listaFinal p {
+    font-size: 1.5rem; }
+  /*html de productos*/
+  main .cuerpo {
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho"; }
+    main .cuerpo .nueve {
+      display: none; }
+    main .cuerpo li img {
+      height: 200px;
+      width: 200px; }
+  /*main de nosotros*/
+  main section .textoUno {
+    font-size: 2rem; }
+  main section .textoDos {
+    font-size: 2rem; }
+  main section div img {
+    width: 600px;
+    height: 530px; }
+  main section .textoTres {
+    font-size: 2rem; }
+  main section .textoCuatro {
+    font-size: 2rem; }
+  /*main de contacto*/
+  main div .textoFormulario {
+    font-size: 1.8rem; } }
+
+@media screen and (max-width: 500px) {
+  .encabezado nav a img {
+    height: 1.7rem; }
+  .encabezado nav div div {
+    font-size: 1.1rem; }
+  footer p {
+    font-size: 1.5rem; }
+  /*titulos generales*/
+  main h1 {
+    font-size: 2.5rem; }
+  /*main del index*/
+  .imagenFondo h1 {
+    font-size: 2.5rem; }
+  .imagenFondo .slogan {
+    font-size: 1.5rem; }
+  /*main de productos*/
+  main .cuerpo {
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve"; }
+    main .cuerpo .nueve {
+      display: block; }
+    main .cuerpo li img {
+      height: 230px;
+      width: 230px; }
+  /*main de nosotros*/
+  main section .textoUno {
+    font-size: 1.5rem; }
+  main section .textoDos {
+    font-size: 1.5rem; }
+  main section div img {
+    width: 400px;
+    height: 330px; }
+  main section .textoTres {
+    font-size: 1.5rem; }
+  main section .textoCuatro {
+    font-size: 1.5rem; }
+  /*main de locales*/
+  main div .mapaLocal {
+    width: 600px;
+    height: 600px; }
+  main p {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem; }
+  /*main de contactos*/
+  main div .textoFormulario {
+    font-size: 1.4rem; } }
